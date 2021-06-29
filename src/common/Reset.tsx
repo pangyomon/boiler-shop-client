@@ -7,7 +7,7 @@ const resetStyle = css`
 
   html,
   body,
-  #app {
+  #root {
     width: 100%;
     height: 100%;
   }
