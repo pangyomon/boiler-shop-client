@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { up } from 'styled-breakpoints';
-import { css } from '@emotion/react';
 
 const ResponsiveBox = styled.div`
   width: 100%;
