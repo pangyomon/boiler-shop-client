@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderNavMenu from './HeaderNavMenu';
-import ResponsiveBox from '../box/ResponsiveBox';
+import ResponsiveBox from '../common/box/ResponsiveBox';
 import styled from '@emotion/styled';
 import HeaderLogo from './HeaderLogo';
 import HeaderSubMenu from './HeaderSubMenu';

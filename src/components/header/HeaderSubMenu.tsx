@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
-import Button from '../button/Button';
+import Button from '../common/button/Button';
 
 const HeaderSubMenu = () => {
   return (
