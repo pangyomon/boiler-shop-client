@@ -14,6 +14,11 @@ const resetStyle = css`
     height: 100%;
   }
   
+  body {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
   a {
     text-decoration: none;
     color: inherit;

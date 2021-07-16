@@ -6,12 +6,13 @@ import oc from 'open-color';
 interface HeaderNavItemProps {
   to: string;
   text: any;
+  exact?: boolean;
 }
 
-const HeaderNavItem = ({ to, text }: PropsWithChildren<HeaderNavItemProps>) => {
+const HeaderNavItem = ({ to, text, exact = true }: PropsWithChildren<HeaderNavItemProps>) => {
   return (
     <li>
-      <NavItemLink to={to}>
+      <NavItemLink to={to} exact={exact}>
         {text}
       </NavItemLink>
     </li>
@@ -20,11 +21,11 @@ const HeaderNavItem = ({ to, text }: PropsWithChildren<HeaderNavItemProps>) => {
 
 const NavItemLink = styled(NavLink)`
   display: block;
-  
+
   padding: 1rem;
-  
+
   color: ${oc.gray[5]};
-  
+
   &.active {
     color: ${oc.black};
     font-weight: 700;

@@ -6,6 +6,7 @@ const HeaderNavMenu = () => {
   return (
     <NavBox>
       <NavBoxList>
+        <HeaderNavItem to={'/'} text={'홈'}/>
         <HeaderNavItem to={'/product'} text={'제품'}/>
       </NavBoxList>
     </NavBox>
