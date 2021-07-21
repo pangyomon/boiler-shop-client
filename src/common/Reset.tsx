@@ -14,6 +14,10 @@ const resetStyle = css`
     height: 100%;
   }
   
+  #root {
+    position: relative;
+  }
+  
   a {
     text-decoration: none;
     color: inherit;
