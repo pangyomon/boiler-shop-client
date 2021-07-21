@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 import oc from 'open-color';
+import { up } from 'styled-breakpoints';
 
 interface HeaderNavItemProps {
   to: string;
@@ -34,6 +35,10 @@ const HeaderNavItemLink = styled(NavLink)`
   &.active {
     color: ${oc.black};
     font-weight: 700;
+  }
+  
+  ${up('md')} {
+    border: none;
   }
 `;
 

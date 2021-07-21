@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
-import Logo from '../../assets/img/Logo.svg';
+import Logo from '../../../assets/img/Logo.svg';
 
 const HeaderLogo = () => {
   return (

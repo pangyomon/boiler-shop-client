@@ -25,8 +25,6 @@ const HeaderNavMenuBox = styled.ul<{ open: boolean }>`
   
   transition: left 500ms ease-in-out;
   
-   // display: ${props => props.open ? 'block' : 'none'};
-
   width: 100%;
   height: calc(100vh - 44px);
   
@@ -36,12 +34,13 @@ const HeaderNavMenuBox = styled.ul<{ open: boolean }>`
     position: static;
     
     display: block;
-    left: 0;
-
-    transition: none;
     
     width: auto;
     height: auto;
+
+    transition: none;
+    
+    background-color: transparent;
     
     order: 2;
   }
