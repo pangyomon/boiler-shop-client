@@ -1,24 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
+import Logo from '../../assets/img/Logo.svg';
 
 const HeaderLogo = () => {
   return (
     <HeaderLogoLink to={'/'}>
-      <h1>
-        LOGO
-      </h1>
+      <img src={Logo} alt={'Logo'}/>
     </HeaderLogoLink>
   );
 };
 
 const HeaderLogoLink = styled(Link)`
   display: block;
-
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
+  order: 1;
 `;
 
 export default HeaderLogo;

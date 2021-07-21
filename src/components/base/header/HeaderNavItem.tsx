@@ -10,20 +10,26 @@ interface HeaderNavItemProps {
 
 const HeaderNavItem = ({ to, text }: PropsWithChildren<HeaderNavItemProps>) => {
   return (
-    <li>
-      <NavItemLink to={to}>
+    <HeaderNavItemBox>
+      <HeaderNavItemLink to={to}>
         {text}
-      </NavItemLink>
-    </li>
+      </HeaderNavItemLink>
+    </HeaderNavItemBox>
   );
 };
 
-const NavItemLink = styled(NavLink)`
+const HeaderNavItemBox = styled.li`
+  
+`;
+
+const HeaderNavItemLink = styled(NavLink)`
   display: block;
   
   padding: 1rem;
   
-  color: ${oc.gray[5]};
+  border: 1px solid ${oc.black};
+  
+  color: ${oc.black};
   
   &.active {
     color: ${oc.black};

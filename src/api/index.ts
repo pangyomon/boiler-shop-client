@@ -20,4 +20,17 @@ export const fetchBannerList = async () => {
   return response.data;
 };
 
+export interface Product {
+  id: number;
+  title: string;
+  price: number;
+  thumbnailUrl: string;
+}
+
+export const fetchNewProductList = async() => {
+  const response = await instance.get<Product[]>('/api/v1/product/new');
+
+  return response.data;
+}
+
 export default instance;
