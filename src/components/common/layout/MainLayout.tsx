@@ -3,7 +3,7 @@ import Header from '../../base/header/Header';
 import Footer from '../../base/footer/Footer';
 
 interface MainTemplateProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const MainLayout = ({ children }: MainTemplateProps) => {
@@ -11,7 +11,7 @@ const MainLayout = ({ children }: MainTemplateProps) => {
     <>
       <Header />
       {children}
-      <Footer/>
+      <Footer />
     </>
   );
 };
